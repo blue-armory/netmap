@@ -1,0 +1,25 @@
+{
+  "name": "netmap",
+  "version": "1.0.0",
+  "description": "A Network Exploration and Topology MAPping Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bl00dvault/netmap.git"
+  },
+  "keywords": [
+    "network",
+    "map",
+    "nmap",
+    "pcap"
+  ],
+  "author": "Bloodvault",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bl00dvault/netmap/issues"
+  },
+  "homepage": "https://github.com/Bl00dvault/netmap#readme"
+}
