@@ -11,7 +11,9 @@ Network Exploration and Topology MAPping tool
 ```javascript
 "<script src="/network.js"></script>"
 ```   
-In index.html to switch to network-port to get a unique source -> target port view
+In index.html switch the above line (20) to network-port.js to get a unique source -> target port view
+
+Also, zooming should work properly if hovering over the SVG on the page
 
 ## Requirements
 ### Python
