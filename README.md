@@ -6,6 +6,12 @@ Network Exploration and Topology MAPping tool
 1. python3 app.py
 2. node server.js
 
+### Note
+
+```javascript
+"<script src="/network.js"></script>"
+```   
+In index.html to switch to network-port to get a unique source -> target port view
 
 ## Requirements
 ### Python
