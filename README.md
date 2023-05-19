@@ -6,7 +6,7 @@ Network Exploration and Topology MAPping tool
 1. python3 app.py
 2. node server.js
 
-Network_Data API Hosted: http://localhost:5000/network_data
+Network_Data API Hosted: http://localhost:5000/network_data  
 Visualization Hosted: http://localhost:3000
 
 ### Note
