@@ -1,9 +1,10 @@
 export function runNetwork() {
     d3.select("svg").remove();
-    var width = 1500;
-    var height = 900;
+    var div = d3.select("#network-map");
+    var width = parseInt(div.style("width"));
+    var height = parseInt(div.style("height"));
 
-    var svg = d3.select("body")
+    var svg = d3.select("#network-map")
         .append("svg")
         .attr("width", width)
         .attr("height", height);

@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<!-- <script src="/network.js"></script>
-<script src="/network-port.js"></script> -->
 <html>
   <head>
     <title>Network Topology</title>
-    <h2 id="pcap-file"></h2>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: #f5f5f5;
+      }
+
+      .header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      #network-map {
+        border: 1px solid #ccc;
+        margin: 20px auto;
+        width: 90%;
+        height: 600px;
+      }
+
       .link {
         stroke: #999;
         stroke-opacity: 0.6;
@@ -16,25 +34,53 @@
         stroke: #fff;
         stroke-width: 1.5px;
       }
+
+      .button-container {
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .button-container button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 16px;
+        border: none;
+        color: #fff;
+        background-color: #008CBA;
+        cursor: pointer;
+      }
+
+      .button-container button:hover {
+        background-color: #007B9A;
+      }
     </style>
   </head>
   <body>
-    <button id="button1">Run Network View</button>
-    <button id="button2">Run Network Port View</button>
-    <button id="button3">Download CSV</button>
+    <div class="header">
+      <h2 id="pcap-file"></h2>
+    </div>
+    
+    <div class="button-container">
+      <button id="button1">Run Network View</button>
+      <button id="button2">Run Network Port View</button>
+      <button id="button3">Download CSV</button>
+    </div>
+    
+    <div id="network-map"></div>
+
     <script type="module">
       import { runNetwork } from '/network.js';
       import { runNetworkPort } from '/network-port.js';
       import { exportCSV } from '/export-csv.js';
-    
+
       const button1 = document.getElementById('button1');
       const button2 = document.getElementById('button2');
       const button3 = document.getElementById('button3');
-    
+
       button1.addEventListener('click', function() {
         runNetwork(); 
       });
-    
+
       button2.addEventListener('click', function() {
         runNetworkPort();
       });
@@ -43,6 +89,5 @@
         exportCSV();
       });
     </script>
-    
   </body>
 </html>
