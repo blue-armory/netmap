@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- <script src="/network.js"></script>
+<script src="/network-port.js"></script> -->
 <html>
   <head>
     <title>Network Topology</title>
@@ -17,6 +19,30 @@
     </style>
   </head>
   <body>
-    <script src="/network.js"></script>
+    <button id="button1">Run Network View</button>
+    <button id="button2">Run Network Port View</button>
+    <button id="button3">Download CSV</button>
+    <script type="module">
+      import { runNetwork } from '/network.js';
+      import { runNetworkPort } from '/network-port.js';
+      import { exportCSV } from '/export-csv.js';
+    
+      const button1 = document.getElementById('button1');
+      const button2 = document.getElementById('button2');
+      const button3 = document.getElementById('button3');
+    
+      button1.addEventListener('click', function() {
+        runNetwork(); 
+      });
+    
+      button2.addEventListener('click', function() {
+        runNetworkPort();
+      });
+
+      button3.addEventListener('click', function() {
+        exportCSV();
+      });
+    </script>
+    
   </body>
 </html>
