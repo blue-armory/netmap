@@ -9,14 +9,10 @@ Network Exploration and Topology MAPping tool
 Network_Data API Hosted: http://localhost:5000/network_data  
 Visualization Hosted: http://localhost:3000
 
-### Note
+## Usage  
+![Usage](usage.gif)
 
-```javascript
-"<script src="/network.js"></script>"
-```   
-In index.html switch the above line (20) to network-port.js to get a unique source -> target port view
-
-Also, zooming should work properly if hovering over the SVG on the page
+TODO: Outdated gif, need to redo
 
 ## Requirements
 ### Python
