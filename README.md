@@ -8,7 +8,11 @@ TODO:
 - Add a feature for "Scheme of Maneuver modeling", which is a significanly different tool, but still tangentially related
 
 ## Quick Start
+### API
 1. python3 app.py
+
+## Web UI
+1. npm install express d3
 2. node server.js
 
 Network_Data API Hosted: http://localhost:5000/network_data  
